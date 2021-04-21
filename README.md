@@ -12,6 +12,7 @@ SPECIFIC GET : http://localhost:3000/ticket/{ID}
 DELETE : http://localhost:3000/ticket/{ID}
 
 POST : http://localhost:3000/ticket
+  
   body: {
   	"User":    "BlackJeldo",
 	  "Fecha_creacion": "20/10/2021",
@@ -20,6 +21,7 @@ POST : http://localhost:3000/ticket
   }
   
 PUT : http://localhost:3000/ticket/{ID}
+  
   body: {
       "User":    "Jeldo05",
       "Fecha_creacion": "20/10/2021",
