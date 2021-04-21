@@ -125,11 +125,11 @@ func main() {
 	router := mux.NewRouter().StrictSlash(true)
 
 	router.HandleFunc("/", indexRoute)
-	router.HandleFunc("/tasks", getTasks).Methods("GET")
-	router.HandleFunc("/tasks", createTicket).Methods("POST")
-	router.HandleFunc("/tasks/{id}", getTask).Methods("GET")
-	router.HandleFunc("/tasks/{id}", deleteTask).Methods("DELETE")
-	router.HandleFunc("/tasks/{id}", updateTicket).Methods("PUT")
+	router.HandleFunc("/ticket", getTasks).Methods("GET")
+	router.HandleFunc("/ticket", createTicket).Methods("POST")
+	router.HandleFunc("/ticket/{id}", getTask).Methods("GET")
+	router.HandleFunc("/ticket/{id}", deleteTask).Methods("DELETE")
+	router.HandleFunc("/ticket/{id}", updateTicket).Methods("PUT")
 
 	log.Fatal(http.ListenAndServe(":3000", router))
 }
