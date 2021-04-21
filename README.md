@@ -1,7 +1,11 @@
 # Api-go
-gorilla/mux: go get github.com/gorilla/mux
+DEPENDENCIES:
 
-go run .\main.go
+- gorilla/mux: go get github.com/gorilla/mux
+
+RUN:
+
+-go run .\main.go
 
 ROUTES
 
